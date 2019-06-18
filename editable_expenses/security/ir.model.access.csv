@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_tv_replace_tv_replace,tv_replace.tv_replace,model_tv_replace_tv_replace,,1,0,0,0

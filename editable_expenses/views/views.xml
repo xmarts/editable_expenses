@@ -1,0 +1,17 @@
+<odoo>
+  <data>
+    
+    <record id="readonly_expense_line" model="ir.ui.view">
+      <field name="name">hr</field>
+      <field name="model">hr.expense.sheet</field>
+      <field name="inherit_id" ref="hr_expense.view_hr_expense_sheet_form"/>
+      <field name="arch" type="xml">
+        <data>
+          <xpath expr="//field[@name='expense_line_ids']" position="attributes">
+            <attribute name="attrs">{'readonly': [('state', 'in', ('post', 'done','cancel'))]}</attribute>
+          </xpath>
+        </data>
+      </field>
+</record>
+  </data>
+</odoo>
