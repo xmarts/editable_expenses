@@ -13,6 +13,7 @@ class remplace(models.Model):
     product_id = fields.Many2one('product.product', string='Product')
     unit_amount = fields.Float(string='Unit Price', )
     quantity = fields.Float(string="Cantidad")
+    kdk
 
     
 
