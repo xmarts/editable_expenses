@@ -29,7 +29,7 @@
          <xpath expr="//field[@name='quantity']" position="attributes">
             <attribute name="attrs">{'readonly': [('state', 'in', ('done'))]}</attribute>
           </xpath>
-         
+         ff
         </data>
       </field>
 </record>
