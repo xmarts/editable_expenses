@@ -10,9 +10,9 @@ class ranplace_campo(models.Model):
 class remplace(models.Model):
     _inherit ='hr.expense'
                 
-    product_id = fields.Many2one('product.product', string='Product')
-    unit_amount = fields.Float(string='Unit Price', )
-    quantity = fields.Float(string="Cantidad")
+    product_id = fields.Many2one('product.product', string='Product',states={'draft': [('readonly', False)], 'refused': [('readonly', False)],'approced': [('readonly', False)]})
+    unit_amount = fields.Float(string='Unit Price',states={'draft': [('readonly', False)], 'refused': [('readonly', False)],'approced': [('readonly', False)]} )
+    quantity = fields.Float(string="Cantidad",states={'draft': [('readonly', False)], 'refused': [('readonly', False)],'approced': [('readonly', False)]})
 
     
 
